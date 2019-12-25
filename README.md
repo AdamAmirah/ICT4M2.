@@ -42,7 +42,7 @@ For future enhancement, we are going to fix the consistency of the pages and we 
  | NAME  | CONTRIBUTIONS|   Future Enhancement |
 | ------------- | ------------- | ------------- |
 | Amera Egeh Mohamed  |  Registration Pages, Main Page   |For registration page I believe that in the future I will be able to fix the logic of the page and connect the buttons to control the accordion movement |
-| Furqan Said Hassan  |  Submission guideline Page  |There’s no future enhancements that I would like to do, |
+| Furqan Said Hassan  |  Submission guideline Page , Main Page  |There’s no future enhancements that I would like to do, |
 |  Samreen Sahim Mohamed Saeed | Program page | i would like to add more design to the page | 
 |   Samae Armeeroh |  Keynote Speaker page, fees page , location page |  for the future enhancement, no future enhancements for my pages (Speaker, Location, Fees)|
 |  Ruqiyyah Asmar Abdul hakim |  Call for papers, fees page|Add greater features  |
