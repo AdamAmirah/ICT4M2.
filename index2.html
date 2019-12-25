@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fees Structure</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body bgcolor="#8e8c96" >
+    <div class="top-bg">
+      <div class="topPart" id="top" >
+        <div class="search" >
+              <form>
+                <input class="searchTerm" type="text" placeholder="Search.." name="search">
+                <button class="searchButton" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+        </div>
+        </div>
+        <div class="icon">
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <div class="logo" >
+    <img src="l.png" alt="logo">
+
+      </div>
+    </div>
+
+
+    <ul class="list">
+      <li class="list-group-item"><a class="active" href="index6.html">Home</a></li>
+      <li class="list-group-item"><a href="index6.html">About</a></li>
+      <div class="dropdown">
+      <li class="list-group-item"><a href="#submission">Submission</a>
+        <div class="dropdown-content">
+          <a href="index4.html">CALL FOR PAPERS</a>
+          <a href="index3.html">SUBMISSION GUIDLINES</a>
+        </div></li></div>
+      <li class="list-group-item"><a href="index.html">Speakers</a></li>
+      <div class="dropdown">
+      <li class="list-group-item"><a href="#program">Program</a>
+        <div class="dropdown-content">
+      <a href="index5.html">CONFERENCE PROGRAM</a>
+      <a href="index7.html">RIGISTERATION</a>
+      <a href="index2.html">FEES STRUCTURE</a></div><li>
+     </div>
+
+      <li class="list-group-item"><a href="index3.html">Location</a></li>
+    </ul>
+<h1 align="center">Conference Fees</h1><br>
+
+<div class="pp">
+
+<div class="tab">
+   <button class="tablinks" onclick="opent(event,'Local')" id="defaultOpen">Local</button>
+  <button class="tablinks" onclick="opent(event,'Inter')">International</button>
+
+</div>
+
+
+
+
+<div id="Local" class="tabcontent">
+<table bgcolor="pink" class="table2">
+  <tr>
+    <th >Type of Registration</th>
+    <th colspan="3">Rate</th>
+
+  </tr>
+  <tr>
+   <th></th>
+   <td colspan="2" align="center"><b>Early Bird<br>(20% Discount)</b></td>
+    <td align="center"><b>Regular Rate<b/></td>
+
+  </tr>
+  <tr>
+    <td><b>Conference Paper Presenter</b></td>
+    <td colspan="2">RM 1,200 / USD 200</td>
+    <td>RM 1,500 / USD 300</td>
+  </tr>
+   <tr>
+    <td><b>Student Presenter</b></td>
+    <td colspan="2">RM 800 / USD 193</td>
+    <td>RM 1,000 / USD 241</td>
+  </tr>
+  <tr>
+  <td><b>Participant (without papers)</b></td>
+    <td colspan="3" align="center"> RM 600 / USD 144</td>
+  </tr>
+</table>
+</div>
+
+
+<div id="Inter" class="tabcontent">
+
+<table bgcolor="pink" >
+  <tr>
+    <th >Type of Registration</th>
+    <th colspan="3">Rate</th>
+
+  </tr>
+  <tr>
+   <th></th>
+   <td colspan="2" align="center"><b>Early Bird<br>(20% Discount)</b></td>
+    <td align="center"><b>Regular Rate</b></td>
+
+  </tr>
+  <tr>
+    <td><b>Conference Paper Presenter</b></td>
+    <td colspan="2">RM 1,600 / USD 400</td>
+    <td>RM 2,000 / USD 500</td>
+  </tr>
+   <tr>
+    <td><b>Student Presenter</b></td>
+    <td colspan="2">RM 1,280 / USD 320</td>
+    <td>RM 1,600 / USD 400</td>
+  </tr>
+  <tr>
+  <td><b>Participant (without papers)</b></td>
+    <td colspan="3" align="center"> RM 700 / USD175</td>
+  </tr>
+</table>
+</div>
+
+</div>
+<script>
+function opent(evt, tp) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tp).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<br><br><br>
+<div class="unlist">
+  <div class="trans">
+  <ul><b>
+  <li>Additional papers from the same presenter will be charged RM500 per paper / USD 125
+    <br> (up to 2 papers only).</li>
+  <li>A student presenter must provide proof of student status, such as student identification
+  <br>   during registration.</li>
+  <li>Conference registration includes access to all parallel sessions, invited speakers, meals,
+    <br> conference kit and a copy of the conference proceedings.</li>
+</ul></b>
+</div>
+</div>
+<br><br>
+<div class="bb">
+<a href="index7.html">  <button class="button" type="button">Pay now</button></a>
+</div>
+
+
+
+
+<footer class="footer-distributed">
+
+<div class="footer-left">
+
+<h3>ICT<span>4M</span></h3>
+
+<div class="pic">
+<p>ORGANIZED BY</p>
+<img src="iium.png" alt="iium">
+ </div>
+<p class="footer-company-name">copyright &copy; ICT4M</p>
+</div>
+
+<div class="footer-center">
+
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span>Universiti Islam Antarabangsa
+           Malaysia Kuantan Campus</span>
+           <span>Jalan Sultan Ahmad Shah,
+                 Bandar Indera Mahkota,</span>Kuantan, Pahang, Malaysia</p>
+</div>
+
+<div>
+<i class="fa fa-phone"></i>
+<p>+603-6196 6406</p>
+</div>
+
+<div>
+<i class="fa fa-envelope"></i>
+<p><a href="mailto:support@company.com">ict4m@iium.edu.my</a></p>
+</div>
+
+</div>
+
+<div class="footer-right">
+
+<p class="footer-company-about">
+ICT4M 2020 is a conference that gathers academicians, researchers,
+practitioners, professionals, and students to address the challenges
+of Information and Communication Technology (ICT) for the Muslim world.
+</p>
+
+<div class="footer-icons">
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Style to set the body alignment into center */
+
+        /* Style to set the div style to display
+            countdown timer */
+        #countDownTimer{
+            font-family: Times new roman;
+            color: black;
+            align-items: center;
+            position:absolute;
+            bottom: 60px;
+            right: 5px;
+            left:5px;
+            display: inline-block;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            -webkit-border-bottom-left-radius:5px;
+              -webkit-border-bottom-right-radius:5px;
+
+        }
+
+        #countDownTimer > div{
+            padding: 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        #countDownTimer div > span {
+            background: pink;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .timeText{
+            font-weight:bold;
+            padding-top: 5px;
+            font-size: 20px;
+            color:black;
+        }
+    </style>
+  </head>
+  <body bgcolor="#8e8c96" >
+
+<div class="top-bg">
+  <div class="topPart" id="top" >
+
+    <div class="search" >
+          <form>
+            <input class="searchTerm" type="text" placeholder="Search.." name="search">
+            <button class="searchButton" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+    </div>
+
+    </div>
+    <div class="icon">
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
+    <div class="logo" >
+
+<img src="l.png" alt="logo">
+<div id="countDownTimer">
+        <div>
+            <span id="days"></span>
+            <div class="timeText">Days</div>
+        </div>
+
+        <div>
+            <span id="hours"></span>
+            <div class="timeText">Hours</div>
+        </div>
+
+        <div>
+            <span id="minutes"></span>
+            <div class="timeText">Minutes</div>
+        </div>
+
+        <div>
+            <span id="seconds"></span>
+            <div class="timeText">Seconds</div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+    <script>
+
+        // Set the date and time for countdown timer
+        // in string format
+        var countDownDate = new Date("March 27, 2020 09:00:00").getTime();
+
+        // Increase the count down timer
+        // with every 1 second
+        var x = setInterval(function() {
+
+            // Get the current date and time
+            var currentTime = new Date().getTime();
+
+            // Difference between current and given date
+            // in milliseconds
+            var timeDifference = countDownDate - currentTime;
+
+            // The difference of time converted into days,
+            // hours, minutes and seconds
+            var days = Math.floor(timeDifference
+                            / (1000 * 60 * 60 * 24));
+
+            var hours = Math.floor((timeDifference %
+                   (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            var minutes = Math.floor((timeDifference %
+                       (1000 * 60 * 60)) / (1000 * 60));
+
+            var seconds = Math.floor((timeDifference %
+                            (1000 * 60)) / 1000);
+
+            // Display the output
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text
+            if (timeDifference < 0) {
+                clearInterval(x);
+                document.getElementById("countDownTimer").innerHTML
+                                = "Countdown Timer Ended!";
+            }
+        }, 1000);
+    </script>
+      <nav>
+      <ul class="list">
+    <li class="list-group-item"><a class="active" href="#home">Home</a></li>
+    <li class="list-group-item"><a href="#about">About</a></li>
+    <div class="dropdown">
+    <li class="list-group-item"><a href="#submission">Submission</a>
+      <div class="dropdown-content">
+        <a href="index4.html">CALL FOR PAPERS</a>
+        <a href="index3.html">SUBMISSION GUIDLINES</a>
+      </div></li></div>
+
+    <li class="list-group-item"><a href="index.html">Speaker</a></li>
+
+    <div class="dropdown">
+      <li class="list-group-item"><a href="#program">Program</a>
+      <div class="dropdown-content">
+        <a href="index5.html">CONFERENCE PROGRAM</a>
+        <a href="index7.html">REGISTRATION</a>
+        <a href="index2.html">FEES STRUCTURE</a>
+
+      </div></li></div>
+
+    <li class="list-group-item"><a href="index10.html">Location</a></li>
+  </ul>
+</nav>
+
+<div id="slider" >
+<figure>
+<img  id="b1" src="banner3.jpg">
+<img   id="b2"  src="banner4.jpg">
+<img   id="b3"  src="banner1.jpg">
+<img   id="b4"  src="banner5.jpg">
+<img  id="b5"  src="banner2.jpg">
+
+</figure>
+
+
+<br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+
+<div class="wrapper">
+<div class="cards cf">
+  <div class="fancy-card one">
+    <div class="bg-overlay"></div>
+    <div class="v-border"></div>
+    <div class="h-border"></div>
+    <div class="content">
+      <div class="primary">
+        <h2>ICT4M 2020</h2>
+      </div>
+      <div class="secondary">
+        <p>ICT4M 2020 is a conference that gathers academicians, researchers, practitioners, professionals, and students to address the challenges of Information and Communication Technology (ICT) for the Muslim world.This conference has been conducted seven times so far with the most recent location in Kuala Lumpur, Malaysia on 23-25 July 2018.
+           For this upcoming event, ICT4M 2020 will be conducted on 27 – 29 March 2020 at the IIUM Kuantan Campus. The theme for this year is “Embracing eHealth in Facing the Challenges of IR4.0 in the Muslim World”.
+           It is hosted by the Kulliyyah of Information and Communication Technology, International Islamic University Malaysia (KICT, IIUM) in collaboration with CENTRIS, IIUM and will be organized in conjunction of 2020 World Congress For Integration And Islamization.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+     <div class="about2">
+
+      <div class="left">
+        <br>
+        <h4>ORGANIZED BY <hr></h4>
+
+      <p> The International Islamic University Malaysia, also known as IIUM or UIAM, is a public publicly-funded university in Malaysia.
+          Its main campus is located in Gombak,Selangor with its Centre for Foundation Studies situated in Petaling Jaya / Nilai and its
+          medical-centric branch in Kuantan, Pahang. </p>
+      </div>
+
+      <div class="center">
+        <img src=""  alt="">
+        <br>
+        <h4>IMPORTANT DATES <hr></h4>
+        <p> Notification of Abstract Acceptance <b> <em>21 January 2020 </em> </b> <br><br>
+            Early Bird Registration <b><em>22 January – 31 January 2020 </em></b> <br><br>
+            Deadline for Full Payment<b> <em>10 February 2020  </em></b> <br><br>
+            Conference Dates <b><em>27 – 29 March 2020 </em> </b> </p>
+      </div>
+
+      <div id="right">
+        <img src="" alt="">
+        <br>
+        <h4>CONTACT<hr></h4>
+        <p><span>Universiti Islam Antarabangsa
+                 Malaysia Kuantan Campus</span>
+                 <span>Jalan Sultan Ahmad Shah,
+                 Bandar Indera Mahkota,</span>Kuantan, Pahang, Malaysia</p>
+                       <p>+603-6196 6406</p>
+                       <p><a href="mailto:support@company.com">ict4m@iium.edu.my</a></p>
+      </div>
+     </div>
+
+
+
+     <div class="video">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/1AlM8s5F35w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     </div>
+
+
+
+          <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+        <h3> <a name="loc"></a> ICT<span>4M</span></h3>
+
+        <div class="pic">
+          <p class = "org">ORGANIZED BY</p>
+         <img src="iium.png" alt="iium">
+        </div>
+
+        <p class="footer-company-name">copyright &copy; ICT4M</p>
+        </div>
+
+        <div class="footer-center">
+
+        <div >
+        <i class="fa fa-map-marker"></i>
+        <p><span>Universiti Islam Antarabangsa
+                 Malaysia Kuantan Campus</span>
+                 <span>Jalan Sultan Ahmad Shah,
+                       Bandar Indera Mahkota,</span>Kuantan, Pahang, Malaysia</p>
+        </div>
+
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+603-6196 6406</p>
+        </div>
+
+        <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">ict4m@iium.edu.my</a></p>
+        </div>
+
+        </div>
+
+        <div class="footer-right">
+
+        <p class="footer-company-about">
+        ICT4M 2020 is a conference that gathers academicians, researchers,
+        practitioners, professionals, and students to address the challenges
+        of Information and Communication Technology (ICT) for the Muslim world.
+        </p>
+
+        <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+        </div>
+
+        </footer>
+
+</body>
+</html>

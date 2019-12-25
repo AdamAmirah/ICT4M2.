@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Personal Details.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body bgcolor="#8e8c96" >
+<div class="top-bg">
+  <div class="topPart" id="top" >
+    <div class="search" >
+          <form>
+            <input class="searchTerm" type="text" placeholder="Search.." name="search">
+            <button class="searchButton" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+    </div>
+    </div>
+    <div class="icon">
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
+    <div class="logo" >
+<img src="l.png" alt="logo">
+
+  </div>
+</div>
+      <nav>
+      <ul class="list">
+    <li class="list-group-item"><a class="active" href="index6.html">Home</a></li>
+    <li class="list-group-item"><a href="index6.html">About</a></li>
+    <div class="dropdown">
+    <li class="list-group-item"><a href="#submission">Submission</a>
+      <div class="dropdown-content">
+        <a href="index4.html">CALL FOR PAPERS</a>
+        <a href="index3.html">SUBMISSION GUIDLINES</a>
+      </div></li></div>
+
+    <li class="list-group-item"><a href="index.html">Speaker</a></li>
+    <div class="dropdown">
+      <li class="list-group-item"><a href="#program">Program</a>
+      <div class="dropdown-content">
+        <a href="index5.html">CONFERENCE PROGRAM</a>
+        <a href="index7.html">REGISTRATION</a>
+        <a href="index2.html">FEES STRUCTURE</a>
+
+      </div></li></div>
+    <li class="list-group-item"><a href="index10.html">Location</a></li>
+  </ul>
+</nav>
+
+<br><br>
+<h2>REGISTRATION</h2>
+<br><br><br>
+<form  name='registration' class="" action="index.html" method="post">
+
+<article>
+  <ul class="accordion">
+    <li class="accordion__item">
+      <a href="#" class="accordion__link accordion__link_active">PERSONAL DETAILS</a>
+      <ul class="sub-accordion">
+        <br><br>
+        <li id= "fname"  class="sub-accordion__item">&ensp; &ensp;&ensp;&ensp; &ensp; &ensp;&ensp; &ensp; First Name *</li>
+        <input type="text" placeholder="First Name" id=text1 required>
+        <br><br>
+        <li id= "Lname" class="sub-accordion__item">&ensp; &ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp;Last Name *</li>
+        <input type="text" id="text2" placeholder="Last Name" required>
+        <br><br>
+        <li  id= "email" class="sub-accordion__item">&ensp; &ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp;Email *</li>
+        <input type="text" id="text3"  placeholder="Email" required>
+        <br><br>
+        <div class="text5">
+          <label for="" id="org">Organization *</label>
+          <input type="text" id="text5"  placeholder="Organization" required>
+        </div>
+        &ensp;&ensp; &ensp;  &ensp;&ensp;    &ensp;&ensp; &ensp;  &ensp;&ensp;
+         <div class="text4">
+        <label for="Number" id="phone">Phone Number *</label>
+        <input type="text" id="text4"   placeholder="Phone Number" required>
+        </div>
+      </form>
+        <br><br><br><br>
+
+
+      <div class="select-style">
+         <div class="select1">
+   <select>
+     <option value="Choose REGISTRATION">Choose Registration Type</option>
+     <option value="International">International Participants</option>
+     <option value="Local">Local Participants</option>
+   </select>
+ </div>
+ <div class="select2">
+ <select>
+ <option value="Choose program">Choose Program</option>
+ <option value="Conference Paper">Conference Paper Presenter</option>
+ <option value="Sturdent Presenter">Sturdent Presenter</option>
+ <option value="Without Papers">Participants ( Without Papers )</option>
+ </select>
+ </div>
+ <br><br><br><br><br>
+  <button onclick="" type="submit" name="button" id="submit">Please procced to payment</button>
+<br><br><br><br><br>
+      </ul>
+    </li>
+
+    <li class="accordion__item">
+      <a href="#" class="accordion__link">PAYMENT</a>
+      <ul class="sub-accordion">
+        <br><br><br><br>
+        <li class="sub-accordion__item">&ensp;&ensp;&ensp; &ensp;&ensp; &ensp; &ensp; &ensp; Card Holder Name *</li>
+        <input type="text" placeholder="First Name" id=text1 required>
+        <br><br>
+        <li class="sub-accordion__item">&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; &ensp; Card Number *&ensp;&ensp;   <img src="visa_logo.gif" alt="visa logo">&ensp;&ensp;<img src="mastercard_logo.gif" alt=""> </li>
+        <input type="text" id="text2" placeholder="Last Name" required>
+        <br><br><br><br>
+        <div class="text5">
+          <label for="" id="org">CVC/CVV *</label>
+          <input type="text" id="text5"  placeholder="Organization" required>
+        </div>
+        &ensp;&ensp; &ensp;  &ensp;&ensp;
+         <div class="text4">
+        <label for="Number" id="phone">Expiration Date *</label>
+        <input type="text" id="text4"   placeholder="Phone Number" required>
+        </div>
+        <br><br> <br><br>
+        <button onclick="" type="submit" name="button" id="submit">Please procced to confirmation</button>
+        <br><br><br><br><br>
+
+      </ul>
+    </li>
+    <li class="accordion__item">
+      <a href="#" class="accordion__link">CONFIRMATION</a>
+      <ul class="sub-accordion">
+        <br><br>
+        <h2> CONGRATULATION ! REGISTRATION COMPLETED SUCESSFULY </h2>
+     </div>
+
+        <br><br>
+      <p> <b> Your Registration Number is :   T1816420</b> <br><br><br>
+          Please Check Your Registered E-mail To Access The Full Information On The Conference And To Get Any Updates From Conference Committee.
+           <br><br><br>
+          Thank You For Registering for ICT4M Conference.
+
+          <br><br><br><br>
+        <a href="index6.html"> <button type="button" name="button">Home Page </button> </a>
+      </ul>
+    </li>
+
+  </ul>
+</article>
+</nav>
+
+<br><br><br><br><br><br>
+
+
+
+<footer class="footer-distributed">
+
+<div class="footer-left">
+
+<h3>ICT<span>4M</span></h3>
+
+<div class="pic">
+<p class = "org">ORGANIZED BY</p>
+<img src="iium.png" alt="iium">
+</div>
+
+<p class="footer-company-name">copyright &copy; ICT4M</p>
+</div>
+
+<div class="footer-center">
+
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span>Universiti Islam Antarabangsa
+      Malaysia Kuantan Campus</span>
+      <span>Jalan Sultan Ahmad Shah,
+            Bandar Indera Mahkota,</span>Kuantan, Pahang, Malaysia</p>
+</div>
+
+<div>
+<i class="fa fa-phone"></i>
+<p>+603-6196 6406</p>
+</div>
+
+<div>
+<i class="fa fa-envelope"></i>
+<p><a href="mailto:support@company.com">ict4m@iium.edu.my</a></p>
+</div>
+
+</div>
+
+<div class="footer-right">
+
+<p class="footer-company-about">
+ICT4M 2020 is a conference that gathers academicians, researchers,
+practitioners, professionals, and students to address the challenges
+of Information and Communication Technology (ICT) for the Muslim world.
+</p>
+
+<div class="footer-icons">
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+
+</div>
+
+</div>
+
+</footer>
+<script type="text/javascript">
+
+
+function slide(link) {
+
+var down = function (callback, time) {
+var subMenu = link.nextElementSibling;
+var height = subMenu.clientHeight;
+var part = height / 100;
+
+var paddingTop = parseInt(window.getComputedStyle(subMenu, null).getPropertyValue('padding-top'));
+var paddingBottom = parseInt(window.getComputedStyle(subMenu, null).getPropertyValue('padding-bottom'));
+var paddingTopPart = parseInt(paddingTop) / 50;
+var paddingBottomPart = parseInt(paddingBottom) / 30;
+
+(function innerFunc(i, t, b) {
+
+  subMenu.style.height = i + 'px';
+
+  i += part;
+
+  if(t < paddingTop) {
+
+    t += paddingTopPart;
+    subMenu.style.paddingTop = t + 'px';
+
+  } else if(b < paddingBottom) {
+
+    b += paddingBottomPart;
+    subMenu.style.paddingBottom = b + 'px';
+  }
+
+  if(i < height) {
+
+    setTimeout(function() {
+
+        innerFunc(i, t, b);
+
+    }, time / 100);
+
+  } else {
+
+    subMenu.removeAttribute('style');
+    callback();
+  }
+
+})(0, 0, 0);
+},
+
+up = function (callback, time) {
+
+var subMenu = link.nextElementSibling;
+var height = subMenu.clientHeight;
+var part = subMenu.clientHeight / 100;
+var paddingTop = parseInt(window.getComputedStyle(subMenu).paddingTop);
+var paddingBottom = parseInt(window.getComputedStyle(subMenu).paddingBottom);
+var paddingTopPart = parseInt(paddingTop) / 30;
+var paddingBottomPart = parseInt(paddingBottom) / 50;
+
+(function innerFunc(i, t, b) {
+
+  subMenu.style.height = i + 'px';
+
+  i -= part;
+  i = i.toFixed(2);
+
+  if(b > 0) {
+
+    b -= paddingBottomPart;
+    b = b.toFixed(1);
+    subMenu.style.paddingBottom = b + 'px';
+
+  } else if(t > 0) {
+
+    t -= paddingTopPart;
+    t = t.toFixed(1);
+    subMenu.style.paddingTop = t + 'px';
+  }
+
+  if(i > 0) {
+
+    setTimeout(function() {
+
+        innerFunc(i, t, b);
+
+    }, time / 100);
+
+  } else {
+
+    subMenu.removeAttribute('style');
+    callback();
+  }
+
+})(height, paddingTop, paddingBottom);
+}
+
+return {
+down: down,
+up: up
+}
+}
+
+var accordion = (function() {
+
+var menu = document.querySelectorAll('.accordion');
+var activeClass = 'accordion__link_active';
+var arr = [];
+var timer = 100;
+
+for(let i = 0; i < menu.length; i++) {
+
+    for(let p = 0; p < menu[i].children.length; p++) {
+
+        var link = menu[i].children[p].firstElementChild;
+
+        if(link.classList.contains(activeClass)) {
+            arr[i] = link;
+        }
+    }
+}
+
+function accordionInner(i) {
+
+  var clicked = false;
+
+  menu[i].addEventListener('click', function(e) {
+
+    if(e.target.tagName === 'A' && !clicked) {
+
+      clicked = true;
+
+      if(e.target.classList.contains(activeClass)) {
+
+        slide(e.target).up(function() {
+
+          clicked = false;
+
+          e.target.classList.remove(activeClass);
+
+          console.log('slide up of accordion ' + i + ' is done');
+
+        }, timer);
+
+      } else {
+
+        if(arr.length > 0) {
+
+          slide(arr[i-1]).up(function() {
+
+            arr[i-1].classList.remove(activeClass);
+
+            arr[i-1] = e.target;
+
+            console.log('slide up of accordion ' + i + ' is done');
+
+          }, timer);
+        }
+
+        e.target.classList.add(activeClass);
+
+        slide(e.target).down(function() {
+
+          clicked = false;
+
+          arr[i-1] = e.target;
+
+          console.log('slide down of accordion ' + i + ' is done');
+
+        }, timer);
+      }
+    }
+  });
+
+  i++;
+
+  if(i < menu.length) { accordionInner(i); }
+
+} accordionInner(0);
+})();
+
+
+
+
+
+
+
+
+</script>
+
+  </body>
+</html>
